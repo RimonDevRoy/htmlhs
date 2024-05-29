@@ -1,0 +1,72 @@
+<!-- 
+    The "<b></b>" tag make anything inside it as bold. It was used in earlier times when CSS was not used that much, and "<strong></strong>" does the same thing, but it acts as a medium of telling the search engine the content inside it is a matter of putting emphasis.
+
+    Similarly, there are "<i><i/>" and "<em></em>" tags for italicizing. i for only styling like italic and em for emphasizing.
+
+    "i" and "b" can be subsituted by CSS as they are only for styling but when it comes to emphasizing, "strong" and "em" should be used.
+
+    Some list items can be made by the help of the syntax:
+        ul>li*number / ol>li*number
+    This will create an ordered or unordered list of list items equal to the number given.
+
+    I think we can make anything by the syntax:
+    parent>children*number
+
+    We can make "ul" and "ol" similar by adding style, but going back to the syntactical point of view the search engine will identify them as unordered list and ordered list respectively.
+
+    The text-aligning is done withing the range of the element, that is, the range of block elements are whole blocks and thus, centered will take the text in the center of the block element as shown in the "p".
+
+    The "style" attribute adds inline CSS in an element.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting style and global attributes</title>
+    <link rel="stylesheet" href="">
+    <style>
+        pre {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* I figured out that applying a style in the parent tag does not apply to the child "pre" tags inside them */
+        
+        p:nth-child(2) {
+            text-align: justify;
+            background-color: yellow;
+        }
+        p:nth-child(3) {
+            text-align: center;
+            background-color: red;
+        }
+        p:nth-child(4) {
+            text-align: end;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <pre>
+    This is <b>bold</b>
+    This is <strong>strong</strong>
+    This is <i>italic</i>
+    This is <em>emphasis</em>
+    This is <small>small</small>
+    This is 50<sub>sub</sub>
+    This is 50<sup>sup</sup>
+    This is <del>del</del>
+    This is <mark>mark</mark>
+    </pre>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus harum fugiat, cum nostrum unde cumque, delectus saepe excepturi aut nemo perspiciatis, dolore blanditiis dignissimos facere nobis obcaecati voluptatem debitis sed amet non similique voluptates. Quibusdam voluptas in autem repudiandae, illo quisquam, maiores magni voluptates nemo tempore atque aperiam doloremque saepe.</p>
+    <p>This is centered</p>
+    <p>This is end</p>
+    <script src=""></script>
+</body>
+
+</html>

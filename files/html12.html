@@ -1,0 +1,54 @@
+<!--
+    All the information in the form are bundled together and sent at the same time to the backend server.
+
+    The "action" attribute of form tag decides where to send the data by taking the URL or path of the backend.
+
+    The "method" attribute of form tag decides is it "GET" or "POST".
+
+    The "POST" is used to send the data to server as it encrypts the data before sending.
+
+    The "GET" is used to send the data in clear text format without encryption.
+
+    Screenreaders can not read the placeholders of inputs of forms.
+
+    Inputs inside forms have many types.
+
+    It is a good practice to attach a label with each input.
+
+    To connect the label with input, we need to put the id of the input into the "for" attribute. This will take us to the input it is associated with when we click on the label, otherwise it will just stay beside the input.
+
+    The type of button can be kept "submit" when to send the data to the desired location.
+
+    The "accept-charset" attribute defines the character set that the form will accept.
+
+    The "autocomplete" attribute defines whether suggestions will be shown while filling the form.
+
+    The "enctype" attribute has some values, "text/plain" makes that no image can be sent through the form, "multipart/form-data" allows to send images and other types of files through browse option.
+
+    The "target" is same like link.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="">
+    <style>
+
+    </style>
+</head>
+<body>
+    <form action="#" method="GET" accept-charset="UTF-16" autocomplete="off" enctype="multipart/form-data" target="_blank">
+        <label for="lname">First name</label>
+        <input type="text" name="" id="fname" placeholder="first name">
+        <label for="fname">Last name</label>
+        <input type="text" name="" id="lname" placeholder="last name">
+
+        <button type="submit">Pay</button>
+    </form>
+
+    <script src=""></script>
+</body>
+</html>

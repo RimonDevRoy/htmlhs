@@ -1,0 +1,199 @@
+<!-- 
+    The 'mailto' in value of 'href' automatically fills the 'To' of composing email.
+
+    The 'tel' in value of href will take the user to phone call and put the number on the dialpad.
+
+    We can go to individual sections in the same webpage by the help of anchor tags. We will put the id_name of the section in the 'href' of the anchor tag in order to do that.
+
+    We can creat custom attributes by 'date-custom_name="value"'
+
+    The address of fetched images are to be put in src attribute of image tags.
+
+    In the src attribute, "./" means current folder, "./../" means outer folder of current folder, "./../../" means the outer folder of the outer folder of the current folder. Similarly, "../" directly takes to outer folder of the current folder and so on.
+
+    It is best to keep the name of the images or any files used in the code of webpage in dashed or underscored formed without any spaces, because spaces cause trouble when the code is taken to servers.
+
+    The "picture" tag allows to have media queries in the "source" in them.
+
+    If more than one img is used inside picture tag, only the first img will be repeated.
+
+    If multiple "source" are given inside "picture" tag, only the first one is supposed to run and the next ones will be repeated and at last when none of the above runs, the last one will be displayed.
+
+    The <picture> HTML element contains zero or more <source> elements and one <img> element to offer alternative versions of an image for different display/device scenarios through media query.
+
+    The browser will consider each child <source> element and choose the best match among them. If no matches are found—or the browser doesn't support the <picture> element—the URL of the <img> element's src attribute is selected. The selected image is then presented in the space occupied by the <img> element.
+
+    srcset
+    Specifies a comma-separated list of one or more image URLs and their descriptors. Required if the parent of <source> is <picture>. Not allowed if the parent is <audio> or <video>.
+
+    The picture tag defines the interface that here will be a media file of that type and the sources will load according to the media queries given.
+
+    In computing, a plug-in (or plugin, add-in, addin, add-on, or addon) is a software component that adds a specific feature to an existing computer program. When a program supports plug-ins, it enables customization.
+    
+    Some areas inside the images can be made interactive by the help of "map". The process of making is shown in the lower part of this code. The image has to be made targetable by giving a value preceded by a "#" in the 'usemap' attribute. The value of the usemap is to be given in the "name" attribute of the map tag.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links and images with map</title>
+    <link rel="stylesheet" href="" />
+    <style></style>
+  </head>
+
+  <body>
+    <!-- LINKS -->
+    <a target="_blank" href="mailto:rimon@gmail.com">Send a mail to rimon</a>
+    <a href="tel:+8801754596871">Call rimon</a>
+    <a href="http://google.com">Google</a>
+    <a href="#s2">Go to section 2</a>
+    <a href="#s3">Go to section 3</a>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut
+      pariatur ullam quisquam, enim non eaque fugiat laborum ut deleniti natus
+      ipsa impedit ad nihil, facilis omnis rerum, iste quas temporibus
+      consequuntur! Harum minima animi suscipit! Expedita magnam rem ducimus
+      beatae soluta minima non esse asperiores cupiditate perspiciatis, minus
+      maiores officia hic. Ipsam veritatis id beatae facilis? Sapiente eius
+      doloribus cumque. Porro architecto voluptatem voluptatibus molestias quo
+      ea, amet magni est, qui eum itaque rerum tempora! Ipsa dolores alias
+      repellendus saepe, perferendis commodi molestiae laboriosam, vero corporis
+      sapiente quibusdam ducimus quas maxime tempora mollitia distinctio
+      blanditiis assumenda consequuntur voluptatem ut officiis atque soluta
+      tempore quasi! Commodi nam nesciunt amet aliquid sit, beatae repellat,
+      impedit, consequatur deserunt est ab. Earum officia consequuntur labore
+      eaque sunt quos quis suscipit deleniti eveniet praesentium consectetur
+      provident beatae nam iure, eum fugiat dolorem corporis enim porro autem
+      nulla repellat error. Reiciendis odio fugiat error reprehenderit nemo
+      natus fuga, repudiandae officia voluptas quo sequi id quae consequatur
+      laudantium ipsam nobis. Cum, facere explicabo autem hic magni quibusdam
+      expedita. Hic reprehenderit magnam, praesentium accusantium facilis iusto
+      veritatis excepturi, obcaecati officiis tempore fugit perspiciatis at sunt
+      natus mollitia eius voluptatum vitae veniam laborum quidem ad minus qui
+      exercitationem.
+    </p>
+
+    <p id="s2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore esse eius
+      quibusdam molestiae eos deleniti repellendus neque perspiciatis veritatis?
+      Cumque doloribus veniam qui assumenda aut nam porro incidunt ipsam
+      inventore possimus, aliquid quo exercitationem dolore blanditiis a,
+      expedita officiis aperiam magni? Veritatis fugit nam possimus aliquam
+      harum similique voluptatem earum, doloremque debitis dicta aut voluptas,
+      molestias sunt culpa neque! Ab quaerat debitis natus optio id repudiandae
+      quasi perspiciatis nesciunt pariatur deserunt! Consequuntur, omnis
+      laudantium accusantium corrupti provident aliquid pariatur! Dolores itaque
+      suscipit illo nisi qui sapiente ea culpa, dolorum eaque eveniet
+      consequuntur? Quia illo quibusdam officia, beatae possimus voluptatem
+      autem ducimus quas iste animi nemo vero, asperiores odit inventore aperiam
+      sequi aspernatur consequatur. Fugiat veritatis iure quibusdam voluptatem
+      quas sapiente itaque cupiditate sequi ea. Nemo inventore cumque architecto
+      ipsum accusantium eum reiciendis soluta ratione laborum, vero sit
+      asperiores voluptatibus aut, quibusdam fuga iusto libero, fugiat amet ipsa
+      iste ducimus quaerat omnis perspiciatis. Voluptate atque iusto quos.
+      Reprehenderit odit commodi iure a ipsum repellat! Minima, laboriosam.
+      Explicabo neque dolore repudiandae inventore veniam molestiae rem
+      reprehenderit odio nostrum? Eius facilis aspernatur dignissimos ut ipsum
+      et facere, corporis, at numquam id aliquid voluptatibus reiciendis
+      veritatis eligendi atque repudiandae saepe fuga quae a quia.
+    </p>
+
+    <p id="s3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non harum ut unde
+      obcaecati voluptates explicabo. Ipsum voluptatum, laudantium tempore
+      perferendis repellendus voluptates, cum eos ea pariatur, officia culpa
+      distinctio numquam? Nihil harum quasi error, perspiciatis amet maxime
+      optio nemo minus quia rerum culpa quo sit aliquid eius magni neque
+      deleniti? Soluta at inventore vel ipsa modi aperiam, nobis nulla. Expedita
+      fuga qui explicabo nesciunt ad, commodi aperiam modi id obcaecati!
+      Mollitia consequatur quae praesentium illum? Accusantium, aliquam
+      doloremque velit optio voluptate eos nemo ea, consectetur rerum ducimus
+      quam laudantium aspernatur quisquam provident aliquid earum fugiat
+      molestias dicta nihil facere facilis? At, eius. Officia, saepe aspernatur
+      quis cumque voluptatem, delectus laborum praesentium excepturi ipsa
+      placeat vero adipisci ab. Rerum odio neque repudiandae quam et soluta
+      tempore? Nemo, quos adipisci! Aut asperiores mollitia, autem voluptas
+      officia nisi architecto! Possimus temporibus tenetur aperiam, officia
+      molestiae praesentium, minima id veniam libero ea reiciendis repellat
+      perspiciatis, ipsum aliquam at quaerat cupiditate. Quod magni laudantium
+      ex atque, expedita fuga incidunt harum adipisci at maiores unde quibusdam
+      possimus ipsam id aut quo voluptatibus debitis rem repudiandae nulla! Ut
+      id dolor aliquid omnis, illo at maxime blanditiis. Quae, soluta facere
+      aliquam sequi dicta explicabo culpa sapiente est eos.
+    </p>
+
+    <!-- IMAGES -->
+    <img
+      src="https://images.unsplash.com/photo-1699192325371-191fb2feb856?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMHx8fGVufDB8fHx8fA%3D%3D"
+      width="200px"
+      alt="bedroom image"
+    />
+
+    <img
+      src="./92680c130f03773f24789bcc4bea26ac.jpg"
+      width="200px"
+      alt="supreme image"
+    />
+
+    <img src="../../essays.png" width="200px" alt="local image" />
+
+    <picture>
+      <source
+        media="(min-width: 200px)"
+        srcset="
+          https://plus.unsplash.com/premium_photo-1710849581742-f2151607c745?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzM3x8fGVufDB8fHx8fA%3D%3D
+        "
+      />
+      <img
+        src="https://plus.unsplash.com/premium_photo-1710849581742-f2151607c745?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzM3x8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+      />
+    </picture>
+
+    <!-- MAPS -->
+    <img
+      src="https://plus.unsplash.com/premium_photo-1669068929118-04e028778ffa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3M3x8fGVufDB8fHx8fA%3D%3D"
+      usemap="#mapping"
+      alt="mapped"
+    />
+
+    <map name="mapping">
+      <area
+        onclick="f()"
+        target=""
+        alt="mapped"
+        title=""
+        href=""
+        coords="141,274,340,405"
+        shape="rect"
+      />
+      <area
+        onclick="f()"
+        target=""
+        alt="mapped"
+        title=""
+        href=""
+        coords="37,762,102,759,167,873,20,789"
+        shape="poly"
+      />
+      <area
+        onclick="f()"
+        target=""
+        alt="mapped"
+        title=""
+        href=""
+        coords="327,716,189"
+        shape="circle"
+      />
+    </map>
+
+    <script src="">
+      function f() {
+        alert("wow");
+      }
+    </script>
+  </body>
+</html>

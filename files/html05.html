@@ -1,0 +1,61 @@
+<!-- 
+    The direct colors are to be avoided because the interpretation of the colors from their name is done differently by different browsers and thus the specific codes of colors should be given.
+
+    When we hover on the given color as value, we get a color editor and we can also change the type of color being used such as: RGB, hsl, rgba, hex etc. by clicking. The "a" is alpha channel and it defines the opacity of the color.
+
+    If a CSS file is connected with HTML and styles are written in head, the one that is given below will get higher preference.
+
+    Inline CSS has the highest priority.
+
+    The "<blockquote></blockquote>" tag makes the enclosed content as extended quotation. The "cite" attribute can be used to express the URL of source or the name of the person or anything like that. A text representation related to the quote can be shown by the "<cite>" element.
+
+    The "q" tag does the same thing but it automatically adds quotation marks to the content.
+
+    The "<abbr></abbr>" can be used to show abbreviations and title attribute can be used to show the full form of the abbreviation.
+
+    The "bdo" can be used to change the direction of the text. The attribute "dir" sets the direction of the text with either values 'rtl' and 'ltr'.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Value of colors and CSS format</title>
+    <link rel="stylesheet" href="">
+    <style>
+        p {
+            background-color: #169fb1;
+            color: rgb(0, 0, 0);
+        }
+
+        pre {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>This is for colors</p>
+
+    <blockquote cite="Elon">
+        The following text is a quote.
+    </blockquote>
+    <cite>-Elon</cite>
+
+    <q>
+        This is a quote.
+    </q>
+
+    <abbr title="Hyper Text Markup Language">HTML</abbr>
+
+    <bdo dir="ltr">LefttoRight</bdo>
+
+    <bdo dir="rtl">RighttoLeft</bdo>
+
+    <script src=""></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!-- 
+    Try "ul/ol>li*number{value}".
+
+    "list-style-type" can be used to change the style of bullet points in unordered lists.
+
+    Attributes of "ol":
+    reversed
+    This Boolean attribute specifies that the list's items are in reverse order. Items will be numbered from high to low.
+
+    start
+    An integer to start counting from for the list items. Always a numeral (1, 2, 3, etc.), even when the numbering type is letters or Roman numerals. For example, to start numbering elements from the letter "d" or the Roman numeral "iv," use start="4".
+
+    type
+    Sets the numbering type:
+
+    a for lowercase letters
+    A for uppercase letters
+    i for lowercase Roman numerals
+    I for uppercase Roman numerals
+    1 for numbers (default)
+    The specified type is used for the entire list unless a different type attribute is used on an enclosed <li> element.
+
+    Block elements take the whole block, whereas inline elements only take the width upto which it's content needs.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists, Inline & Block elements</title>
+    <link rel="stylesheet" href="">
+    <style>
+        span,
+        p,
+        h3 {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>unordered list</h1>
+    <ul>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+    </ul>
+
+    <h1>ordered list</h1>
+    <ol type="I">
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+    </ol>
+
+    <h1>description list</h1>
+    <dl>
+        <dt>Wow</dt>
+        <dd>Exclamation</dd>
+        <dt>Alas</dt>
+        <dd>sorrow</dd>
+    </dl>
+
+    <p>test</p>
+    <h3>test</h3>
+    <span>test</span>
+
+    <script src=""></script>
+</body>
+
+</html>

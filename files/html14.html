@@ -1,0 +1,43 @@
+<!--
+    Using "video" tag implies that the video files are in the same server as the HTML files are(laptop in my case).
+
+    Usign iFrames imply that the webpage has only opened a window and the content is given by a third party website like youtube and the server load is on youtube also.
+
+    The current folder is also termed as "root directory", and the live preview prefers to use files only from the root directory.
+
+    The "muted", "autoplay", "controls" attributes provide features that go with their names.
+
+    If we want to customize the controls of videos and audios, we will have to do it with JS.
+
+    HTML can not provide access to browser related things like localStorage.
+
+    We can only declare API's like "drag and drop", "canvas" etc with HTML but we need JS to fully use them.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media and API</title>
+    <link rel="stylesheet" href="">
+    <style>
+
+    </style>
+</head>
+<body>
+    <video src="./../stuff/02.mp4" autoplay muted controls></video>
+    <!-- Both are ok -->
+    <video autoplay muted controls>
+        <source src="../stuff/01.mp4">
+    </video>
+
+    <audio src="./../stuff/Do-Mi-So.mp3" controls></audio>
+    <!-- Both are ok -->
+    <audio controls>
+        <source src="./../stuff/Do-Mi-So.mp3">
+    </audio>
+
+    <script src=""></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!--
+    The input of type "reset" will take the values of all inputs into their default value.
+
+    The "value" attribute of input is the default value of the input.
+
+    The "week" type input enables us to select a week from a year.
+
+    The "select" tag allows an interface to select one from many options.
+
+    The type "hidden" is very useful while coding in django when to send tokens from servers which are not supposed to be seen by users but we need to fill.
+
+    There is no need to memorize all the input types, just read through MDN docs when needed.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of input forms</title>
+    <link rel="stylesheet" href="">
+    <style>
+
+    </style>
+</head>
+<body>
+    <form action="#" method="GET">
+        <input type="text" name="" id="" value="low" placeholder="write here">
+        <input type="text" name="" id="" value="high" placeholder="write here">
+
+        <input type="reset" value="res">
+
+        <select name="editors" id="" multiple>
+            <option value="vscode">vscode</option>
+            <option value="sublimetext">sublime</option>
+            <option value="replit">replit</option>
+            <!-- multiple attribute for selecting multiple options -->
+        </select>
+
+        <input list="editors" name="editor">
+        <datalist id="editors">
+            <option value="vscode">vscode</option>
+            <option value="sublimetext">sublime</option>
+            <option value="replit">replit</option>
+        </datalist>
+        <!-- Same as select but way complex -->
+
+        <input type="hidden" name="">
+        <label for="wk">Week</label>
+        <input type="week" name="" id="wk">
+    </form>
+
+    <script src=""></script>
+</body>
+</html>

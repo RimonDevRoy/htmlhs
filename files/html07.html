@@ -1,0 +1,144 @@
+<!-- 
+    Try "table>tr*number>td*number"
+
+    The th values are bolded by the broswer not CSS, because the broswer gets to identify which are headings and which are data in the table due to the proper use of semantic tags.
+
+    The border-collapse CSS property sets whether cells inside a <table> have shared or separate borders.
+
+    The border-spacing CSS property sets the distance between the borders of adjacent cells in a <table>. This property applies only when border-collapse is 'separate'.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            color: rgba(0, 0, 0, 0.865);
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid black;
+            text-align: center;
+            /* text-align property allows the text of an element to be aligned within the free space of the content inside the element, padding is the distance between the borders of the content and actual border of the element.*/
+            padding: 2px;
+            margin: 2px;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(71, 217, 217, 0.797);
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgba(23, 230, 65, 0.797);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Country</th>
+            <th>Country code</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>IND</td>
+        </tr>
+        <tr>
+            <td>United states of america</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Canada</td>
+            <td>CAD</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Profound</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th>Profession</th>
+            <td>Coder</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <td>Profound</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th>Profession</th>
+            <td>Coder</td>
+        </tr>
+        <!-- Notice this table -->
+    </table>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Profound</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Age</th>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th>Profession</th>
+            <td>Coder</td>
+        </tr>
+        <!-- Notice this table -->
+    </table>
+
+    <colgroup>
+        <col span="2" style="background-color: black;" onclick="alert('wow');" />
+    </colgroup>
+    <table>
+        <tr>
+            <th>Country</th>
+            <th>Country code</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>IND</td>
+            <td>Idiot</td>
+        </tr>
+        <tr>
+            <td>United states of america</td>
+            <td>USA</td>
+            <td>Idiot</td>
+        </tr>
+        <tr>
+            <td>Canada</td>
+            <td>CAD</td>
+            <td>Idiot</td>
+        </tr>
+    </table>
+
+
+    <script src=""></script>
+</body>
+
+</html>

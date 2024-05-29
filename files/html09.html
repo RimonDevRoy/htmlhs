@@ -1,0 +1,71 @@
+<!--
+    Frameworks and libraries assign unique ID and classes to each elements to keep a reference of it and bring it from the memory when needed in the future.
+
+    The main motive of giving classes and IDs is to make elements targettable and selectable.
+
+    iFrames are risky to use. Suppose we have embedded a google form through iFrame, but a hacker can put his own google form in that place and whatever info is put there goes to the hacker. Another possibility is that the page being loaded through iFrame could be a malicious webpage.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class, ID and iFrame</title>
+    <link rel="stylesheet" href="">
+    <style>
+        .red {
+            background-color: green;
+        }
+
+        #green {
+            background-color: red;
+        }
+
+        table,
+        td,
+        tr,
+        th {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CLASSES AND ID -->
+    <p class="red">Lorem ipsum dolor sit amet.</p>
+    <p class="red">Suscipit, aliquid eligendi! Architecto, quia.</p>
+    <p id="green">Lorem ipsum dolor sit amet.</p>
+
+    <!-- iFrame exercise -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Video</th>
+        </tr>
+        <tr>
+            <td>Chai aur code</td>
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-wMbf3qVNsc?si=8r-nUx-U7X4BHl-d"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </td>
+        </tr>
+        <tr>
+            <td>Testosterone</td>
+            <td>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0XdtL6mfryo?si=d_UBNWUG1gcqNneb"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </td>
+        </tr>
+    </table>
+
+    <script src=""></script>
+</body>
+
+</html>
